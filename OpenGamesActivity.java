@@ -1,0 +1,29 @@
+package com.example.daniel.rhetoric;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+
+public class OpenGamesActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_open_games);
+    }
+
+    public void playScreen(View view){
+        Intent intent = new Intent(this, ChangeToPlayScreen.class);
+        startActivity(intent);
+    }
+
+    public void newGame(View view){
+        Intent intent = new Intent(this, ChangeToPlayScreen.class);
+        startActivity(intent);
+    }
+
+}
